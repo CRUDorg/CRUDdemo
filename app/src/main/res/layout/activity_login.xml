@@ -7,7 +7,7 @@
     tools:context=".LoginActivity">
 
     <EditText
-        android:id="@+id/txtUsernameSingup"
+        android:id="@+id/txtUsernameLogin"
         android:layout_width="270dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/txtPassword"
+        android:id="@+id/txtPasswordLogin"
         android:layout_width="270dp"
         android:layout_height="40dp"
         android:layout_marginTop="30dp"
@@ -32,10 +32,10 @@
         android:hint="Password"
         android:inputType="textPassword"
         android:textColorHint="#000000"
-        app:layout_constraintEnd_toEndOf="@+id/txtUsernameSingup"
+        app:layout_constraintEnd_toEndOf="@+id/txtUsernameLogin"
         app:layout_constraintHorizontal_bias="0.485"
-        app:layout_constraintStart_toStartOf="@+id/txtUsernameSingup"
-        app:layout_constraintTop_toBottomOf="@+id/txtUsernameSingup" />
+        app:layout_constraintStart_toStartOf="@+id/txtUsernameLogin"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsernameLogin" />
 
     <Button
         android:id="@+id/btnLogin"
@@ -45,10 +45,10 @@
         android:background="#3CAAF8"
         android:text="login"
         android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="@+id/txtPassword"
+        app:layout_constraintEnd_toEndOf="@+id/txtPasswordLogin"
         app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toStartOf="@+id/txtPassword"
-        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+        app:layout_constraintStart_toStartOf="@+id/txtPasswordLogin"
+        app:layout_constraintTop_toBottomOf="@+id/txtPasswordLogin" />
 
     <TextView
         android:id="@+id/textView"
@@ -64,7 +64,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
 
     <TextView
-        android:id="@+id/txtCreateAcc"
+        android:id="@+id/tvCreateAcc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
