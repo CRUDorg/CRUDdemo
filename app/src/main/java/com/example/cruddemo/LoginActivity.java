@@ -21,7 +21,9 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         final Intent intentGotoUserAct = new Intent(this,UserActivity.class );
-        m_txtUsername = (EditText) findViewById(R.id.txtUsernameLogin);
+        final Intent intentGotoSingupAct = new Intent(this,SingupActivity.class);
+
+        m_txtUsername = (EditText) findViewById(R.id.txtUsernameSingup);
         m_txtPassword = (EditText) findViewById(R.id.txtPasswordLogin);
         m_btnLogin = (Button) findViewById(R.id.btnLogin);
         m_tvCreateAcc = (TextView) findViewById(R.id.tvCreateAcc);
@@ -31,6 +33,16 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(intentGotoUserAct);
+                LoginActivity.this.finish();
+            }
+        });
+
+
+        m_tvCreateAcc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(intentGotoSingupAct);
+                LoginActivity.this.finish();
             }
         });
 
